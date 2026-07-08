@@ -1722,15 +1722,12 @@ flutter run
 
 ```
 flutter doctor output:
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│  วางผลลัพธ์จาก flutter doctor ที่นี่                    │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
 
-Flutter Version: ___________________
-Dart Version: ______________________
-Android SDK Version: _______________
+
+
+Flutter Version: Flutter version 3.44.4
+Dart Version: Dart version 3.12.2
+Android SDK Version: Android SDK version 34.0.0
 ```
 
 ### 3.2 Screenshot ของ Flutter App
@@ -1762,12 +1759,23 @@ MaterialApp
 
 **Prompt แบบ Simple:**
 ```
-(วาง Prompt ที่ใช้)
+ช่วยเขียนโค้ด Flutter หน้าทดสอบที่มี main() สำหรับเปิดบนเว็บ โดยจำกัดขนาดพื้นที่ตรงกลางจอกว้าง 400 และสร้างคอมโพเนนต์ชื่อ ProfileCard (StatelessWidget) ที่รับค่า name, role, email
 ```
 
 **Prompt แบบ Detailed:**
 ```
-(วาง Prompt ที่ใช้)
+คุณเป็น Senior Flutter Developer ช่วยสร้างแอปทดสอบบนเว็บที่มีฟังก์ชัน main() และจัดวัตถุให้อยู่ตรงกลางจอด้วยความกว้าง 350 โดยมีคลาสคอมโพเนนต์หลักชื่อ ProfileCard (StatelessWidget) รับค่า name, role, email ผ่าน Constructor และเขียนแยกเมธอดตามหลัก Clean Code ดังนี้:
+
+1. ตัวหลักใช้ Card ที่มีเงาฟุ้งสวยงาม (elevation: 8) และใช้ดีไซน์พื้นหลังการ์ดเป็นแบบไล่เฉดสีเบาๆ (LinearGradient) จากสีขาวไปสีเทาน้ำเงิน ขอบโค้งมน 20
+
+2. การจัดวางด้านในเป็นแนวตั้ง (Column) เรียงลำดับจากบนลงล่าง ให้ดึง UI ออกเป็นเมธอดแยกเพื่อให้อ่านง่าย:
+
+  _buildAvatar(): วงกลมสีน้ำเงินเข้มขนาดรัศมี 45 ด้านในมีไอคอนคนสีขาวขนาด 50
+  _buildProfileInfo(): แสดงข้อความชื่อเป็นตัวหนาขนาด 22 สีน้ำเงินเข้ม และข้อความตำแหน่งตัวพิมพ์ใหญ่ขนาด 12
+  คั่นกลางข้อมูลด้วยเส้น Divider สีดำจางๆ
+  _buildEmailRow(): แถวแนวนอนจัดกึ่งกลาง แสดงไอคอนจดหมายพร้อมข้อความอีเมลสีเทาน้ำเงิน
+
+3. ขอโค้ดรูปแบบ Dart ที่สมบูรณ์พร้อมคัดลอกนำไปวางใช้งานได้ทันที
 ```
 
 **ความแตกต่างของผลลัพธ์:**
@@ -1776,6 +1784,14 @@ MaterialApp
 ```
 
 ### 3.5 Screenshot ของ AI Chat App
+
+**แบบ Simple**
+
+```
+[แนบ Screenshot ของ Gemini AI Chat ที่ทำงานได้]
+```
+
+**แบบ Detailed**
 
 ```
 [แนบ Screenshot ของ Gemini AI Chat ที่ทำงานได้]
